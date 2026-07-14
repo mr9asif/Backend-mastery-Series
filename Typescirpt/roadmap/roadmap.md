@@ -1,402 +1,407 @@
-# TypeScript Master Roadmap (2026)
+# 🚀 Complete TypeScript Mastery Roadmap
 
-> Goal: Become a **Job-Ready Full Stack TypeScript Developer** using
-> **React, Node.js, Express, Prisma, PostgreSQL**.
+> Goal:
+>
+> Become a Senior TypeScript Developer by learning not only syntax but also how TypeScript works internally, advanced type systems, compiler behavior, real-world architecture, React, Node.js, design patterns, and production best practices.
 
-------------------------------------------------------------------------
+---
 
-# Phase 1 --- TypeScript Fundamentals
+# Chapter 0 — Introduction
 
--   What is TypeScript
--   Why TypeScript
--   How TypeScript Works
--   TypeScript Compiler
--   Installing TypeScript
--   `tsconfig.json`
--   Compile TypeScript
--   Run TypeScript (`tsx`, `ts-node`)
--   Variables (`let`, `const`)
--   Type Annotation
--   Type Inference
--   Basic Types
--   `any`
--   `unknown`
--   `never`
--   `void`
+- What is TypeScript?
+- Why TypeScript Exists
+- JavaScript vs TypeScript
+- How TS Works
+- Compile Process
+- TypeScript Architecture
+- Type Erasure
+- Runtime vs Compile Time
+- Installing TypeScript
+- First Program
 
-**Outcome** - Write TypeScript files - Compile and run projects -
-Understand type errors
+---
 
-------------------------------------------------------------------------
+# Chapter 1 — TypeScript Fundamentals
 
-# Phase 2 --- Type System
+- Variables
+- Primitive Types
+- Arrays
+- Tuples
+- Objects
+- Functions
+- Type Annotation
+- Type Inference
+- Literal Types
+- Type Widening
+- Type Narrowing
+- any
+- unknown
+- never
+- void
+
+---
+
+# Chapter 2 — Understanding Every Type
 
 ## Primitive Types
 
--   string
--   number
--   boolean
--   bigint
--   symbol
--   null
--   undefined
+- string
+- number
+- boolean
+- bigint
+- symbol
 
-## Reference Types
+## Special Types
 
--   Array
--   Tuple
--   Object
--   Readonly
--   Function
--   Date
-
-## Other Types
-
--   Literal Types
--   Union Types
--   Intersection Types
--   Type Alias
--   Interface
--   Type vs Interface
--   Enum (Numeric, String, Const)
-
-## Operators
-
--   `typeof`
--   `keyof`
--   `in`
--   `instanceof`
-
-------------------------------------------------------------------------
-
-# Phase 3 --- Functions
-
--   Function Types
--   Arrow Functions
--   Named Functions
--   Optional Parameters
--   Default Parameters
--   Rest Parameters
--   Function Overloading
--   Return Types
--   `void`
--   `never`
--   Callbacks
--   Async Functions
--   Promise
--   Generic Functions
-
-**Real-world** - Controllers - Services - Middleware - Helper Functions
-
-------------------------------------------------------------------------
-
-# Phase 4 --- Objects & OOP
+- any
+- unknown
+- never
+- void
+- null
+- undefined
 
 ## Object Types
 
--   Nested Objects
--   Optional Properties
--   Readonly Properties
--   Index Signatures
-
-## Classes
-
--   Class
--   Constructor
--   Properties
--   Methods
--   Access Modifiers
--   public
--   private
--   protected
--   readonly
-
-## OOP
-
--   Inheritance
--   `extends`
--   `super`
--   Abstract Classes
--   Interfaces (`implements`)
--   Getter / Setter
--   Static Members
-
-------------------------------------------------------------------------
-
-# Phase 5 --- Advanced Types
-
--   Type Narrowing
--   Type Guards
--   Type Assertions
--   Non-null Assertion (`!`)
--   Optional Chaining (`?.`)
--   Nullish Coalescing (`??`)
--   Discriminated Unions
--   Mapped Types
--   Conditional Types
--   Indexed Access Types
--   Template Literal Types
-
-------------------------------------------------------------------------
-
-# Phase 6 --- Generics
-
--   Generic Functions
--   Generic Interfaces
--   Generic Classes
--   Generic Types
--   Constraints
--   Default Generics
--   Multiple Generics
-
-## Real-world
-
--   APIResponse`<T>`{=html}
--   Pagination`<T>`{=html}
--   Repository`<T>`{=html}
--   Cache`<T>`{=html}
--   Result`<T>`{=html}
-
-------------------------------------------------------------------------
-
-# Phase 7 --- Modules & Project Setup
-
--   Import / Export
--   Default Export
--   Named Export
--   Path Aliases
--   Module Resolution
--   ES Modules
--   CommonJS
-
-## Type Definitions
-
--   `@types`
--   `.d.ts`
-
-## tsconfig
-
--   strict
--   noImplicitAny
--   target
--   module
--   rootDir
--   outDir
--   baseUrl
-
-------------------------------------------------------------------------
-
-# Phase 8 --- Backend TypeScript
-
-## Folder Structure
-
-``` text
-src/
- ├── controllers/
- ├── services/
- ├── routes/
- ├── middlewares/
- ├── helpers/
- ├── types/
- ├── interfaces/
- ├── utils/
- └── config/
-```
-
-## Topics
-
--   Express Types
--   Request / Response / NextFunction
--   Middleware Types
--   Error Types
--   JWT Types
--   Environment Variables
--   Prisma Types
--   Zod Types
--   Async Handler
--   Custom Error
--   Global Error Handler
--   Repository Pattern
--   Service Layer
--   DTO
--   API Response Types
--   Validation Types
-
-## Advanced
-
--   Declaration Merging
--   Express Request Extension (`req.user`)
--   Global Types
--   Namespaces
--   Module Augmentation
-
-## Real-world
-
--   Pagination
--   Filtering
--   Sorting
--   Generic Services
--   Response Builders
--   Error Builders
-
-------------------------------------------------------------------------
-
-# Phase 9 --- React TypeScript
-
--   Component Props
--   Children
--   React.FC
--   useState
--   useEffect
--   useMemo
--   useRef
--   useContext
--   useReducer
-
-## Events
-
--   ChangeEvent
--   MouseEvent
--   KeyboardEvent
--   FormEvent
-
-## Forms
-
--   Input
--   Select
--   Textarea
-
-## API
-
--   Axios Types
--   React Query Types
--   Mutations
--   Queries
--   Error Types
-
-## Routing
-
--   React Router Types
-
-## Context API
-
--   Providers
--   Reducers
-
-## Custom Hooks
-
--   useAuth()
--   useUser()
--   usePost()
-
-------------------------------------------------------------------------
-
-# Phase 10 --- Production-Level TypeScript
-
-## Utility Types
-
--   Readonly
--   ReadonlyArray
--   Record
--   Pick
--   Omit
--   Exclude
--   Extract
--   Partial
--   Required
--   ReturnType
--   Parameters
--   Awaited
--   InstanceType
-
-## Advanced
-
--   infer
--   Conditional Types
--   Recursive Types
--   Mapped Types
-
-## Design Patterns
-
--   Repository
--   Factory
--   Singleton
--   Dependency Injection
-
-## Error Handling
-
--   Typed Errors
--   Validation Errors
--   API Errors
-
-## Quality
-
--   Strict Mode
--   ESLint
--   Prettier
--   Best Practices
-
-------------------------------------------------------------------------
-
-# Extra Topics
-
--   Declaration Files
--   Module Augmentation
--   Namespaces
--   Decorators
--   Metadata
--   Reflect
--   ts-node
--   tsx
--   swc
--   esbuild
-
-------------------------------------------------------------------------
-
-# Full-Stack Topics
-
--   DTO
--   API Response
--   Axios Generics
--   React Query Generics
--   Prisma Types
--   Express Types
--   JWT Payload Types
--   Environment Types
--   Request User Types
--   Pagination Types
-
-------------------------------------------------------------------------
-
-# Recommended Learning Order
-
-1.  Introduction
-2.  Setup & Compiler
-3.  Basic Types
-4.  Variables
-5.  Arrays
-6.  Tuples
-7.  Objects
-8.  Functions
-9.  Type Alias
-10. Interface
-11. Union
-12. Intersection
-13. Enum
-14. Type Narrowing
-15. Type Guards
-16. Classes
-17. OOP
-18. Modules
-19. Generics
-20. Utility Types
-21. Advanced Types
-22. Declaration Files
-23. tsconfig
-24. Backend TypeScript
-25. React TypeScript
-26. Production Patterns
-27. Interview Preparation
-28. Best Practices
-29. Hands-on Mini Projects
-30. Real Company Architecture
+- object
+- Object
+- {}
+
+Difference Between All
+
+---
+
+# Chapter 3 — Functions
+
+- Function Types
+- Parameters
+- Optional Parameters
+- Default Parameters
+- Rest Parameters
+- Function Overloading
+- Callback Types
+- Higher Order Functions
+- Arrow Functions
+- this Keyword
+- Return Types
+
+---
+
+# Chapter 4 — Objects & Interfaces
+
+- Interfaces
+- Type Alias
+- Difference
+- Optional Properties
+- Readonly
+- Index Signature
+- Interface Extension
+- Multiple Interfaces
+- Declaration Merging
+- Structural Typing
+
+---
+
+# Chapter 5 — Classes & OOP
+
+- Classes
+- Constructors
+- Access Modifiers
+- readonly
+- static
+- abstract
+- getters
+- setters
+- inheritance
+- polymorphism
+- encapsulation
+- interfaces with classes
+- implements
+- extends
+
+---
+
+# Chapter 6 — Advanced Types
+
+- Union Types
+- Intersection Types
+- Literal Types
+- Type Guards
+- Type Predicate
+- typeof
+- instanceof
+- in Operator
+- Discriminated Union
+- Exhaustive Checking
+
+---
+
+# Chapter 7 — Generics
+
+- Generic Functions
+- Generic Classes
+- Generic Interfaces
+- Generic Constraints
+- keyof
+- extends
+- Generic Defaults
+- Multiple Generics
+- Generic Utility Design
+
+---
+
+# Chapter 8 — Type Manipulation
+
+- keyof
+- typeof
+- indexed access
+- mapped types
+- conditional types
+- infer
+- template literal types
+- recursive types
+- distributive conditional types
+
+---
+
+# Chapter 9 — Utility Types
+
+Learn Every Utility Type
+
+- Partial
+- Required
+- Readonly
+- Pick
+- Omit
+- Record
+- Exclude
+- Extract
+- NonNullable
+- Parameters
+- ConstructorParameters
+- ReturnType
+- InstanceType
+- Awaited
+- ThisType
+
+Build Custom Utility Types
+
+---
+
+# Chapter 10 — Modules
+
+- ES Modules
+- CommonJS
+- import
+- export
+- export default
+- Barrel Files
+- Module Resolution
+- Path Alias
+
+---
+
+# Chapter 11 — TypeScript Compiler
+
+Deep Dive
+
+- Compiler Pipeline
+- Parsing
+- AST
+- Binding
+- Type Checking
+- Emit Phase
+- Incremental Build
+- Watch Mode
+- Source Maps
+
+---
+
+# Chapter 12 — tsconfig.json
+
+Learn Every Option
+
+- target
+- module
+- lib
+- rootDir
+- outDir
+- strict
+- noImplicitAny
+- strictNullChecks
+- declaration
+- removeComments
+- sourceMap
+- paths
+- baseUrl
+- include
+- exclude
+- moduleResolution
+- resolveJsonModule
+- isolatedModules
+
+---
+
+# Chapter 13 — Declaration Files
+
+- .d.ts
+- Ambient Modules
+- Global Declaration
+- Module Declaration
+- Writing Custom Typings
+- Third-party Typings
+
+---
+
+# Chapter 14 — React + TypeScript
+
+- Props
+- Components
+- State
+- Events
+- Refs
+- Context
+- Hooks
+- Generics in React
+- React Query
+- Custom Hooks
+- Forward Ref
+- Children
+- HOC
+- Compound Components
+
+---
+
+# Chapter 15 — Node.js + TypeScript
+
+- Express
+- Controllers
+- Services
+- Middleware
+- Error Handling
+- Environment Variables
+- Validation
+- Zod
+- Prisma
+- JWT
+- File Upload
+- Path Alias
+- Production Build
+
+---
+
+# Chapter 16 — Advanced Design Patterns
+
+- Singleton
+- Factory
+- Builder
+- Repository
+- Dependency Injection
+- Strategy
+- Observer
+- Adapter
+- Decorator
+- Command Pattern
+
+---
+
+# Chapter 17 — Performance
+
+- Type Performance
+- Compiler Optimization
+- Build Speed
+- Tree Shaking
+- Dead Code
+- Bundlers
+
+---
+
+# Chapter 18 — Behind The Scenes
+
+- Structural Typing
+- Duck Typing
+- Type Compatibility
+- Variance
+- Covariance
+- Contravariance
+- Bivariance
+- Control Flow Analysis
+- Type Inference Algorithm
+- Symbol Table
+- AST
+- Language Service
+
+---
+
+# Chapter 19 — Testing
+
+- Jest
+- Vitest
+- ts-jest
+- Mocking
+- Type-safe Testing
+
+---
+
+# Chapter 20 — Build Real Projects
+
+Project 1
+CLI Todo
+
+Project 2
+REST API
+
+Project 3
+Authentication System
+
+Project 4
+Blog Backend
+
+Project 5
+React Dashboard
+
+Project 6
+E-commerce Backend
+
+Project 7
+Chat Application
+
+Project 8
+Library Development
+
+---
+
+# Chapter 21 — Interview Preparation
+
+- Most Asked Interview Questions
+- Advanced Type Challenges
+- TypeScript Puzzles
+- Type-Level Programming
+- System Design with TypeScript
+
+---
+
+# Final Goal
+
+After completing this roadmap you should be able to:
+
+✅ Read any TypeScript code
+
+✅ Write production-grade TypeScript
+
+✅ Understand compiler errors instantly
+
+✅ Build type-safe APIs
+
+✅ Build reusable generic libraries
+
+✅ Create custom utility types
+
+✅ Understand the TypeScript compiler
+
+✅ Work confidently with React + TypeScript
+
+✅ Build scalable Node.js applications
+
+✅ Crack Senior TypeScript interviews
+
+✅ Understand the language behind the scenes
