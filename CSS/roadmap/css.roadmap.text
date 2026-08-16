@@ -1,0 +1,494 @@
+Phase 1 — CSS Fundamentals
+1. CSS Basics
+What is CSS?
+CSS syntax
+Selectors
+Declarations & properties
+Values
+Comments
+Inline CSS
+Internal CSS
+External CSS
+CSS Cascade
+2. Selectors
+Universal selector *
+Element selector
+Class selector
+ID selector
+Attribute selector
+Grouping selector
+Descendant selector
+Child selector >
+Adjacent sibling +
+General sibling ~
+Pseudo-class
+Pseudo-element
+3. Specificity
+Specificity calculation
+!important
+Inline vs ID vs class vs element
+Specificity conflicts
+Cascade layers
+Source order
+
+Phase 2 — Box Model & Core CSS
+4. Box Model
+Content
+Padding
+Border
+Margin
+box-sizing
+content-box
+border-box
+5. Width & Height
+width
+height
+min-width
+max-width
+min-height
+max-height
+auto
+Percentage
+vw, vh
+6. Units
+px
+%
+em
+rem
+vw
+vh
+vmin
+vmax
+ch
+ex
+7. Colors & Background
+Named colors
+HEX
+RGB
+RGBA
+HSL
+HSLA
+background-color
+background-image
+Gradients
+background-size
+background-position
+background-repeat
+Multiple backgrounds
+
+Phase 3 — Typography
+8. Text & Fonts
+font-family
+Web-safe fonts
+Web fonts
+font-size
+font-weight
+font-style
+line-height
+letter-spacing
+word-spacing
+text-align
+text-decoration
+text-transform
+text-overflow
+white-space
+word-break
+overflow-wrap
+9. Modern Font Handling
+@font-face
+Variable fonts
+Font loading
+Fallback fonts
+System font stack
+
+Phase 4 — Display & Positioning
+10. Display
+block
+inline
+inline-block
+none
+flex
+grid
+table
+contents
+11. Positioning
+static
+relative
+absolute
+fixed
+sticky
+Understand deeply:
+containing block
+top
+right
+bottom
+left
+inset
+z-index
+stacking context
+👉 এটা interview-এর জন্য খুব important।
+
+Phase 5 — Flexbox ⭐
+12. Flexbox Fundamentals
+Flex container
+Flex items
+display: flex
+Main axis
+Cross axis
+flex-direction
+flex-wrap
+13. Alignment
+justify-content
+align-items
+align-content
+align-self
+14. Flex Sizing
+flex-grow
+flex-shrink
+flex-basis
+flex
+gap
+15. Advanced Flexbox
+Flex item sizing algorithm
+min-width: 0
+Nested flex
+Common flex bugs
+Equal-height layouts
+
+Phase 6 — CSS Grid ⭐
+16. Grid Fundamentals
+Grid container
+Grid items
+Columns
+Rows
+grid-template-columns
+grid-template-rows
+gap
+17. Grid Placement
+grid-column
+grid-row
+grid-area
+Line numbers
+Named lines
+Named areas
+18. Responsive Grid
+fr
+repeat()
+minmax()
+auto-fit
+auto-fill
+auto-placement
+19. Advanced Grid
+Nested grid
+Grid vs Flexbox
+Complex dashboard layouts
+Magazine layouts
+
+Phase 7 — Responsive Design ⭐
+20. Responsive Fundamentals
+Mobile-first design
+Desktop-first design
+Breakpoints
+Media queries
+min-width
+max-width
+21. Responsive Units
+%
+rem
+em
+vw
+vh
+dvh
+svh
+lvh
+22. Modern Responsive CSS
+clamp()
+min()
+max()
+Container queries
+Fluid typography
+Fluid spacing
+Responsive images
+
+Phase 8 — Pseudo Classes & Elements
+23. Important Pseudo-classes
+:hover
+:focus
+:focus-visible
+:active
+:visited
+:checked
+:disabled
+:enabled
+:required
+:valid
+:invalid
+:first-child
+:last-child
+:nth-child()
+:nth-of-type()
+:not()
+:is()
+:where()
+:has()
+24. Pseudo-elements
+::before
+::after
+::first-letter
+::first-line
+::selection
+::placeholder
+::marker
+
+Phase 9 — Advanced CSS
+25. CSS Variables ⭐
+Custom properties
+--variable
+var()
+Global variables
+Component variables
+Fallback values
+Theme system
+26. CSS Functions
+calc()
+min()
+max()
+clamp()
+minmax()
+repeat()
+var()
+27. CSS Transitions
+transition-property
+transition-duration
+transition-delay
+transition-timing-function
+28. CSS Transforms
+translate
+scale
+rotate
+skew
+transform-origin
+2D transforms
+3D transforms
+29. CSS Animations
+@keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-fill-mode
+animation-play-state
+Timing functions
+30. Performance & Accessibility
+prefers-reduced-motion
+Animation performance
+GPU acceleration basics
+Layout vs paint vs composite
+Avoiding expensive animations
+
+Phase 10 — Advanced Visual CSS
+31. Shadows
+box-shadow
+text-shadow
+Multiple shadows
+32. Borders
+Border styles
+Border radius
+border-image
+Outline
+33. Overflow
+overflow
+overflow-x
+overflow-y
+overflow: clip
+Scroll behavior
+34. Images
+object-fit
+object-position
+aspect-ratio
+object-fit: cover
+object-fit: contain
+35. Gradients
+Linear gradient
+Radial gradient
+Conic gradient
+Gradient overlays
+Multiple gradients
+36. Filters
+filter
+blur()
+brightness()
+contrast()
+grayscale()
+drop-shadow()
+37. Clipping & Masking
+clip-path
+CSS masks
+Shapes
+
+Phase 11 — Modern CSS ⭐⭐⭐
+এই অংশটা এখনকার frontend development-এর জন্য খুব important।
+38. Modern Selectors
+:is()
+:where()
+:has()
+:not()
+39. Container Queries
+container-type
+container-name
+@container
+40. Cascade Layers
+@layer
+Layer ordering
+CSS architecture
+41. Nesting
+Native CSS nesting
+Nested selectors
+42. Modern Color
+oklch()
+oklab()
+color-mix()
+43. Logical Properties
+margin-inline
+margin-block
+padding-inline
+padding-block
+inset-inline
+inset-block
+
+Phase 12 — CSS Architecture
+Real project-এর জন্য এই অংশটা অত্যন্ত গুরুত্বপূর্ণ।
+44. CSS Organization
+Component-based CSS
+Utility classes
+Global CSS
+Local CSS
+CSS Modules
+45. Naming
+BEM
+Semantic naming
+Component naming
+46. Design System
+Design tokens
+Color tokens
+Spacing tokens
+Typography tokens
+Radius tokens
+Shadow tokens
+47. Theming
+Light theme
+Dark theme
+CSS variables
+Theme switching
+
+Phase 13 — CSS Layout Mastery
+এখানে শুধু property না, layout চিন্তা করা শিখবে।
+Practice:
+Navbar
+Sidebar
+Dashboard
+Card grid
+Pricing section
+Hero section
+Blog layout
+Admin panel
+E-commerce page
+Chat UI
+Modal
+Dropdown
+Tooltip
+Toast
+Tabs
+Accordion
+Login/Register
+Responsive landing page
+
+Phase 14 — Interview Core Concepts ⭐⭐⭐
+শেষে এগুলো অবশ্যই revise করবে:
+Must Know
+CSS Cascade কী?
+Specificity কী?
+Box model কী?
+box-sizing কেন?
+display: none vs visibility: hidden
+opacity: 0 কীভাবে আলাদা?
+position: relative কী করে?
+absolute কোন element-এর relative?
+fixed vs sticky
+z-index কেন কাজ করে না?
+Stacking context কী?
+Flexbox কীভাবে কাজ করে?
+justify-content vs align-items
+flex-grow vs flex-shrink
+Grid vs Flexbox
+auto-fit vs auto-fill
+minmax() কী?
+em vs rem
+% vs vw
+relative vs absolute
+pseudo-class vs pseudo-element
+:nth-child() কী?
+:is() vs :where()
+:has() কী?
+CSS variable কী?
+calc() / clamp() কী?
+Media query কী?
+Container query কী?
+Mobile-first কী?
+CSS inheritance কী?
+overflow কী?
+object-fit কী?
+Transition vs animation
+Transform vs position
+Reflow / Repaint / Composite
+CSS performance
+Accessibility in CSS
+
+🧠 তোমার জন্য Recommended Learning Order
+সব topic একসাথে পড়বে না।
+এই sequence follow করো:
+CSS Fundamentals
+      ↓
+Selectors
+      ↓
+Cascade + Specificity
+      ↓
+Box Model
+      ↓
+Units
+      ↓
+Typography
+      ↓
+Display
+      ↓
+Position
+      ↓
+Flexbox
+      ↓
+Grid
+      ↓
+Responsive Design
+      ↓
+Pseudo Classes/Elements
+      ↓
+Variables
+      ↓
+Functions
+      ↓
+Transitions
+      ↓
+Transforms
+      ↓
+Animations
+      ↓
+Modern CSS
+      ↓
+CSS Architecture
+      ↓
+Performance
+      ↓
+Interview Questions
+      ↓
+Real Projects
+
