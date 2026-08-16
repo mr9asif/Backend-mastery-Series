@@ -260,3 +260,10 @@ Element-এর content-এর আগে generated content তৈরি করত
 placeholder
 
 ```
+
+## Specificity
+
+p → 0-0-0-1
+.text → 0-0-1-0
+#title → 0-1-0-0
+inline → 1-0-0-0
