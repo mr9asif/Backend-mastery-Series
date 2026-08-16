@@ -231,3 +231,32 @@ button:not(.primary) {
 আগে এই ধরনের parent-based styling অনেক ক্ষেত্রে JavaScript ছাড়া কঠিন ছিল।
 
 ```
+
+## Pseudo-element
+
+Pseudo-element দিয়ে কোনো element-এর specific part বা generated content style করা যায়।
+
+Syntax:
+
+```
+selector::pseudo-element
+
+সবচেয়ে common:
+
+p::first-letter {
+  font-size: 40px;
+}
+
+শুধু প্রথম letter style হবে।
+
+::before
+.button::before {
+  content: "";
+}
+
+Element-এর content-এর আগে generated content তৈরি করতে পারে।
+
+::after
+placeholder
+
+```
