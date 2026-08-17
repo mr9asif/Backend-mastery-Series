@@ -29,3 +29,20 @@
 
 <div class="hidden">Hidden</div>
 ```
+
+#### Width and Height
+
+```
+| CSS                   | Tailwind   |
+| --------------------- | ---------- |
+| `width: 100%`         | `w-full`   |
+| `width: 100vw`        | `w-screen` |
+| `width: auto`         | `w-auto`   |
+| `width: fit-content`  | `w-fit`    |
+| `width: max-content`  | `w-max`    |
+| `width: min-content`  | `w-min`    |
+| `height: 100%`        | `h-full`   |
+| `height: 100vh`       | `h-screen` |
+| `height: auto`        | `h-auto`   |
+| `height: fit-content` | `h-fit`    |
+```
