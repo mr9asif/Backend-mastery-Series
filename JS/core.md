@@ -232,4 +232,50 @@ Q10: How can JavaScript handle asynchronous operations if it is single-threaded?
 Answer:
 
 JavaScript uses its runtime environment for asynchronous operations. For example, browsers provide Web APIs and Node.js provides runtime APIs. When asynchronous work completes, callbacks or promise reactions are queued, and the event loop coordinates when they can run on the main call stack.
+
+Q1. Difference between var, let, and const?
+
+Answer:
+
+var is function-scoped, can be redeclared and reassigned, and accessing it before assignment typically results in undefined.
+
+let is block-scoped, cannot be redeclared in the same scope, but can be reassigned.
+
+const is also block-scoped, cannot be redeclared or reassigned, and must be initialized during declaration.
+
+Q2. Are let and const hoisted?
+
+Answer:
+
+Yes. They are hoisted to their lexical environment, but they remain uninitialized in the Temporal Dead Zone until execution reaches their declaration. Accessing them before initialization throws a ReferenceError.
+
+Q3. What is the Temporal Dead Zone?
+
+Answer:
+
+The Temporal Dead Zone is the period between entering a scope and the initialization of a let or const variable. During this period, the variable cannot be accessed.
+
+Q4. Why does var return undefined, but let throws an error?
+
+Answer:
+
+During execution context setup, a var binding is initialized with undefined. let and const bindings exist but remain uninitialized until their declarations are executed, so accessing them before initialization causes a ReferenceError.
+
+Q5. Can you modify an object declared with const?
+
+Answer:
+
+Yes. const prevents reassignment of the variable binding, but it does not automatically make the referenced object immutable. Its properties can still be changed unless additional immutability mechanisms are used.
+
+Q6. Why should we avoid var?
+
+Answer:
+
+var is function-scoped rather than block-scoped, allows redeclaration, and can lead to confusing behavior because of its hoisting and initialization with undefined. let and const provide clearer and safer scoping behavior.
+
+Q7. Which should you use: let or const?
+
+Answer:
+
+Use const by default. Use let only when the variable needs to be reassigned.
 ```
