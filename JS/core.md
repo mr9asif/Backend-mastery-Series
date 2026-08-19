@@ -278,4 +278,62 @@ Q7. Which should you use: let or const?
 Answer:
 
 Use const by default. Use let only when the variable needs to be reassigned.
+
+Q1. What are the primitive data types in JavaScript?
+
+Answer:
+
+JavaScript has seven primitive data types: String, Number, Boolean, Undefined, Null, Symbol, and BigInt.
+
+Q2. What is the difference between primitive and non-primitive values?
+
+Answer:
+
+Primitive values represent individual immutable values. Non-primitive values, such as objects and arrays, can contain multiple values and are generally mutable. When assigned, primitive values are copied directly, while for objects the copied value is a reference to the same object.
+
+Q3. What is the difference between null and undefined?
+
+Answer:
+
+undefined usually means a variable exists but has not been assigned a value. null is an explicit value that represents intentional absence of an object or value.
+
+Q4. Why does typeof null return "object"?
+
+Answer:
+
+It is a historical bug from early JavaScript implementations. Null is actually a primitive value, but the behavior was preserved for backward compatibility.
+
+Q5. Is JavaScript pass-by-value or pass-by-reference?
+
+Strong Answer:
+
+JavaScript is pass-by-value. When an object is assigned or passed to a function, the copied value is a reference to the object. This means object mutations are visible through all references to that object, but reassigning one variable or parameter does not reassign the original.
+
+Q6. Why does this change the original object?
+const user1 = { name: "Asif" };
+
+
+const user2 = user1;
+
+
+user2.name = "Rahim";
+
+Answer:
+
+user1 and user2 contain reference values that point to the same object. Changing a property through one reference mutates that shared object.
+
+Q7. Why does this not change the original?
+function update(user) {
+  user = { name: "Rahim" };
+}
+
+Answer:
+
+The function receives a copy of the reference value. Reassigning the local parameter makes that local variable point to a new object, but it does not change the original variable outside the function.
+
+Q8. Is an array an object?
+
+Answer:
+
+Yes. In JavaScript, arrays are special objects designed for ordered collections. Therefore, typeof [] returns "object". The recommended way to check for an array is Array.isArray().
 ```
