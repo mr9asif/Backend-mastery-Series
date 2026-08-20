@@ -337,6 +337,5 @@ Answer:
 
 Yes. In JavaScript, arrays are special objects designed for ordered collections. Therefore, typeof [] returns "object". The recommended way to check for an array is Array.isArray().
 
-dskfsdlkflsdkflsdf
-sadlfksdlf
+
 ```
