@@ -2,6 +2,12 @@
 
 JavaScript হলো একটি high-level, interpreted/JIT-compiled, dynamically typed programming language, যা মূলত web page-কে interactive এবং dynamic করার জন্য ব্যবহৃত হয়।
 
+JavaScript is a high-level, dynamically typed programming language primarily used to create interactive and dynamic web applications. It was originally designed to run in web browsers, but with environments like Node.js, it can also run on servers and other platforms. JavaScript follows the ECMAScript specification, which standardizes the language and introduces new features over time.
+
+## hoisting
+
+Hoisting is the behavior where JavaScript processes declarations before executing the code. Var is hoisted and initialized with undefined, while let and const are hoisted but remain in the Temporal Dead Zone until initialization.
+
 ### 2. ECMAScript কী?
 
 এটা খুব important।
@@ -337,5 +343,5 @@ Answer:
 
 Yes. In JavaScript, arrays are special objects designed for ordered collections. Therefore, typeof [] returns "object". The recommended way to check for an array is Array.isArray().
 
-
+<!-- question -->
 ```
